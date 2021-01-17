@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.italic {
+  font-style: italic;
+}
+.font-doka-bold {
+  font-family: "Noto Sans";
+  font-weight: 700;
+}
+.font-doka-regular {
+  font-family: "Noto Sans";
+}
+.font-doka-md {
+  font-family: "Noto Sans";
+  font-weight: 600;
+}
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+}
+.bottom {
+  bottom: -50%;
+  transition: all 1s;
+  pointer-events: none;
+}
+.top {
+  bottom: 50%;
+}
+.center-video {
+  bottom: 15%;
+}
+.video {
+  max-height: 550px;
+  width: 100%;
+}
+.video-sm {
+  max-height: 500px;
+  width: 100%;
+}
+.section-top-space {
+  margin-top: 30%;
+}
+.section-bottom-space {
+  margin-bottom: 5%;
+}
+.top-space-lg {
+  margin-top: 5em;
+}
+.top-space-md {
+  margin-top: 3em;
+}
+.top-space-sm {
+  margin-top: 1em;
+}
+.logo {
+  max-width: 70px;
+}
+.red {
+  background-color: red;
+}
+.index-md {
+  z-index: 2;
+}
+.index-lg {
+  z-index: 3;
+}
+.no-margin-pad {
+  margin: 0;
+  padding: 0;
+}
+.margin-text {
+  margin-right: 5%;
+}
+.margin-text-reverse {
+  margin-left: 5%;
+}
+.contact-text {
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.object {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  top: -100px;
+  left: -100px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(238, 238, 238, 0.5);
+  /* border: 1px solid rgb(238, 238, 238, 0.5); */
+  transition: width 0.5s, height 0.5s;
+}
+.cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  top: -100px;
+  left: -100px;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: lightgray;
+}
+.object-hover {
+  width: 60px;
+  height: 60px;
+}
+a {
+  cursor: none;
+  color: #eee;
+}
+a:hover {
+  cursor: none;
+  color: #eee;
+}
+.email {
+  font-size: medium;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  transition: all 1s;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: -110%;
+  width: 100vw;
+  z-index: 13;
+  top: -5%;
+}
+.open {
+  right: 0;
+}
+.ball {
+  background: #eee;
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 10px;
+  position: relative;
+  z-index: 15;
+}
+
+/* .player {
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  width: 95vw;
+  left: 2.5vw;
+  bottom: -100px;
+} */
+
+html {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top-space-lg {
+    margin-top: 1em;
+  }
+  .section-top-space {
+    margin-top: 20vh;
+  }
+  .cursor,
+  .object {
+    display: none;
+  }
+}
